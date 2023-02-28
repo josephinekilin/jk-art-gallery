@@ -1,0 +1,91 @@
+:root {
+    --primary-clr: #6478c1;
+    --primary-clr-darker: #66739f;
+
+    --clr-blue-accent-dark: #2642aa;
+    --clr-gray: #f5f5f5;
+}
+
+.custom-btn-primary {
+    background-color: var(--primary-clr) !important;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+
+.custom-btn-primary:active,
+.custom-btn-primary:hover,
+.custom-btn-primary:focus {
+    background-color: var(--primary-clr-darker) !important;
+    color: white !important;
+}
+
+.custom-btn-primary:disabled {
+    color: white;
+}
+
+.custom-btn-primary-outline {
+    background-color: white !important;
+    color: var(--primary-clr);
+    border: 1px solid var(--primary-clr);
+    font-weight: 600;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0) var(--primary-clr);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-clr);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-clr-darker);
+}
+
+/* WebKit-based browsers */
+::-webkit-scrollbar-thumb {
+    height: 10px;
+}
+
+/* Firefox */
+::-moz-scrollbar-thumb {
+    height: 10px;
+}
+
+/* Microsoft Edge and Internet Explorer */
+::-ms-scrollbar-thumb {
+    height: 10px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+:-moz-placeholder {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+::-moz-placeholder {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+:-ms-input-placeholder {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.price-accent {
+    color: var(--clr-blue-accent-dark) !important;
+}
